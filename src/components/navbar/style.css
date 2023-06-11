@@ -1,0 +1,109 @@
+.navbar{
+    height: 7rem;
+    background-color: #fff;
+
+    display:grid;
+    grid-template-columns: 21rem 10fr 3fr;
+    grid-template-rows: 1fr;
+    /* border-radius:5px; */
+    
+    align-items:center;
+    
+
+    .logobox{
+         display:flex;
+        align-items:center;
+
+         .logo{
+            height:3.25rem;
+            margin-left:1.2rem;
+            cursor:pointer;
+         }
+
+         .tabname{
+            font-weight:700;
+            margin-left:1.2rem;
+            font-size:2rem;
+         }
+
+    }
+
+
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+
+    .notification{
+        display:flex;
+        justify-content:center ;
+        align-items:center;
+        
+        .notificationicons{
+            display: flex;
+            justify-content: space-around;
+            margin:auto 2rem;
+            cursor:pointer;
+
+        
+            .icons{
+                margin-right:1.2rem;
+                font-size: 2.5rem;
+                display: flex;
+                position:relative;
+
+                .b{
+                    transform: scale(1.1);
+                }
+
+                .icon_value1{
+                    position:absolute;
+                    font-weight: 700;
+                    right:28%;
+                    top:-20%;
+                    font-size:1.5rem;
+                    /* border:2px solid; */
+                    border-radius:50%;
+                    z-index:10;
+                }
+                .icon_value2{
+                    position:absolute;
+                    font-weight: 700;
+                    right:22%;
+                    top:-28%;
+                    font-size:1.5rem;
+                    z-index:10;
+                }
+            }
+
+            .icons:hover{
+                color: var(--color-primary);
+                
+            }
+        }
+
+
+        .profile{
+            display: flex;
+            align-items: center;
+            .profilepic{
+                height:5rem;
+                width:5rem;
+                border-radius:50%;
+                margin-right:1.5rem;
+                }
+            .profilename{
+                margin-right:1rem;
+                font-weight:600;
+            }
+        }
+        
+
+    }
+
+    
+
+}
+

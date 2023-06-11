@@ -1,0 +1,114 @@
+.sidebar{
+    background-color: var(--color-grey-dark-1);
+    color:var(--color-grey-light-1);
+    height:92rem;
+    
+    .sidebar_category_type{
+        margin-left:1rem;
+    }
+    .sidebar_category:first-child{
+        margin-top:1rem;
+    }
+
+
+    .sidebar_category:not(:first-child){
+        margin-top:3rem;
+    }
+
+    .sidebar_category_type{
+        font-weight:700;
+    }
+
+    .sidebar_category_item{
+        margin-top:2rem;
+        
+    }
+
+    .item{
+        display: flex;
+        padding-left:3rem;
+        margin-top:0.5rem;
+        position: relative;
+        
+        cursor:pointer;
+        
+        .item_link{
+            display: flex;
+            text-decoration:inherit;
+        }
+        .item_link:visited,
+        .item_link:link{
+            color:inherit;
+        }
+        
+
+
+        .item-icon {
+            margin-right:1rem;
+            position: relative;
+            z-index:10;
+            margin-top:3px;
+            transform: scale(1.4);
+        }
+        .item-text{
+            position: relative;
+            z-index:10;
+        }
+        
+        
+    }
+
+
+
+    
+    .item::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:3px;
+        background-color: var(--color-primary);
+        transform: scaleY(0); 
+        transition:transform 0.2s,
+                    width 0.4s cubic-bezier(1,0,0,1).2s,
+                    background-color .1s;
+        
+    }
+
+    .item:hover::before,
+    .item-active::before{
+        transform: scaleY(1); 
+        width:100%;
+        
+    }
+
+    .item:active::before{
+        background-color: var(--color-primary-light);
+    }
+
+    /* .item-m:link,
+    .item-m:visited{
+        color:var(--color-grey-light-1);
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        z-index:10;
+        
+    } */
+
+
+
+    .footer{
+        color:var(--color-grey-light-4);
+        margin-left:5px;
+        margin-top:32rem;
+        /* margin-bottom: 1rem; */
+        font-size:1.2rem;
+        text-align:center;
+    }
+
+
+}
+
+

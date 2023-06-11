@@ -1,0 +1,39 @@
+.box{
+    margin-top:5rem;
+    margin-left:5rem;
+    width:25rem;
+    height:40rem;
+    border:3px solid var(--color-primary);
+    box-shadow: var(--shadow-dark);
+    border-radius: .6rem;
+
+    .star_box {
+        display: flex;
+        flex-wrap:wrap;
+        border-bottom: 3px solid;
+       
+        
+       
+
+        .star_box_pic,
+        .pic{
+            transform: scale(.8);
+            border-radius: 50%;
+            margin-left:-1rem;
+        }
+        .star_box_stars{
+            margin-left:2rem;
+            margin-top:5rem;
+            transform: scale(1.7);
+        }
+        .star_box_name{
+            margin-left:1rem;
+            margin-top:-1rem;
+        }
+
+    }
+
+    .review{
+        margin:1rem;
+    }
+}
